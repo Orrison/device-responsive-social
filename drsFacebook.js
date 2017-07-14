@@ -9,13 +9,13 @@ var isIpad = ua.indexOf("ipad") > -1; // Checks if iPad
 var isAndroid = ua.indexOf("android") > -1; // Checks if Android, will work on some Windows mobiles
 
 if(isIphone || isIpad) {
-  setTimeout(function () { window.location = "https://www.facebook.com/rentycarrental"; }, 5000); // Fallback in the event native app opening fails
+  setTimeout(function () { window.location = "https://www.facebook.com/[FACEBOOK USERNAME URL HERE]"; }, 5000); // Fallback in the event native app opening fails
   window.location = "fb://profile/[FACEBOOK ID HERE]"; // Opens FB link in iOS native app
 } else if (isAndroid) {
-  setTimeout(function () { window.location = "https://www.facebook.com/rentycarrental"; }, 25); // Fallback in the event native app opening fails
+  setTimeout(function () { window.location = "https://www.facebook.com/[FACEBOOK USERNAME URL HERE]"; }, 25); // Fallback in the event native app opening fails
   window.location = "fb://page/[FACEBOOK ID HERE]"; // Opens FB link in Android native app
 } else {
-  window.location = "https://www.facebook.com/rentycarrental"; // Defaults to opening link in the browser
+  window.location = "https://www.facebook.com/[FACEBOOK USERNAME URL HERE]"; // Defaults to opening link in the browser
 }
 
 }) ( jQuery );
