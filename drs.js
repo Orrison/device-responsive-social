@@ -15,7 +15,7 @@ if (isIphone || isIpad) {
         var now = new Date().valueOf();
         setTimeout(function () {
         if (new Date().valueOf() - now > 100) return;
-            window.location = "https://wwww.facebook.com/" + $fUser;
+            window.location = "https://www.facebook.com/" + $fUser;
         }, 50);
         window.location.href = "fb://profile/" + $fbUserID; // Opens FB link in iOS native app
     });
@@ -25,7 +25,7 @@ if (isIphone || isIpad) {
         var now = new Date().valueOf();
         setTimeout(function () {
         if (new Date().valueOf() - now > 100) return;
-            window.location = "https://wwww.instagram.com/" + $iUser;
+            window.location = "https://www.instagram.com/" + $iUser;
         }, 50);
         window.location = "instagram://user?username=" + $iUser; // Opens IG link in iOS native app
     });
@@ -35,7 +35,7 @@ if (isIphone || isIpad) {
         var now = new Date().valueOf();
         setTimeout(function () {
         if (new Date().valueOf() - now > 100) return;
-            window.location = "https://wwww.twitter.com/" + $tUser;
+            window.location = "https://www.twitter.com/" + $tUser;
         }, 50);
         window.location = "twitter://user?screen_name=" + $tUser; // Opens IG link in iOS native app
     });
@@ -46,7 +46,7 @@ if (isIphone || isIpad) {
         var now = new Date().valueOf();
         setTimeout(function () {
         if (new Date().valueOf() - now > 100) return;
-            window.location = "https://wwww.facebook.com/" + $fUser;
+            window.location = "https://www.facebook.com/" + $fUser;
         }, 50);
         window.location.href = "fb://page/" + $fbUserID; // Opens FB link in Android native app
     });
@@ -56,7 +56,7 @@ if (isIphone || isIpad) {
         var now = new Date().valueOf();
         setTimeout(function () {
         if (new Date().valueOf() - now > 100) return;
-            window.location = "https://wwww.instagram.com/" + $iUser;
+            window.location = "https://www.instagram.com/" + $iUser;
         }, 50);
         window.location.href = "intent://instagram.com/_u/" + $iUser + "/#Intent;package=com.instagram.android;scheme=https;end"; // Opens IG link in Android native app
     });
@@ -65,7 +65,7 @@ if (isIphone || isIpad) {
         var now = new Date().valueOf();
         setTimeout(function () {
         if (new Date().valueOf() - now > 100) return;
-            window.location = "https://wwww.twitter.com/" + $tUser;
+            window.location = "https://www.twitter.com/" + $tUser;
         }, 500);
         window.location = "twitter://user?screen_name=" + $tUser; // Opens Twitter link in Android native app
     });
