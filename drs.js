@@ -11,7 +11,7 @@ var fbUserID = 423992034621484;
 if (isIphone || isIpad) {
     $('a[href*="facebook.com"]').on('click', function(e){
         e.preventDefault();
-        var fUser = $('a[href*="facebook.com"]').attr("href").match(/facebook.com\/([a-zA-Z_.-]+)/)[1];
+        var fUser = $(this).attr("href").match(/facebook\.com\/([a-zA-Z_.-]+)/)[1];
         var now = new Date().valueOf();
         setTimeout(function () {
         if (new Date().valueOf() - now > 100) return;
@@ -21,7 +21,7 @@ if (isIphone || isIpad) {
     });
     $('a[href*="instagram.com"]').on('click', function(e){
         e.preventDefault();
-        var iUser = $(this).attr("href").match(/instagram.com\/([a-zA-Z_.-]+)/)[1];
+        var iUser = $(this).attr("href").match(/instagram\.com\/([a-zA-Z_.-]+)/)[1];
         var now = new Date().valueOf();
         setTimeout(function () {
         if (new Date().valueOf() - now > 100) return;
@@ -31,7 +31,7 @@ if (isIphone || isIpad) {
     });
     $('a[href*="twitter.com"]').on('click', function(e){
         e.preventDefault();
-        var tUser = $(this).attr("href").match(/twitter.com\/([a-zA-Z_.-]+)/)[1];
+        var tUser = $(this).attr("href").match(/twitter\.com\/([a-zA-Z_.-]+)/)[1];
         var now = new Date().valueOf();
         setTimeout(function () {
         if (new Date().valueOf() - now > 100) return;
@@ -42,7 +42,7 @@ if (isIphone || isIpad) {
 } else if (isAndroid) {
     $('a[href*="facebook.com"]').on('click', function(e){
         e.preventDefault();
-        var fUser = $(this).attr("href").match(/facebook.com\/([a-zA-Z_.-]+)/)[1];
+        var fUser = $(this).attr("href").match(/facebook\.com\/([a-zA-Z_.-]+)/)[1];
         var now = new Date().valueOf();
         setTimeout(function () {
         if (new Date().valueOf() - now > 100) return;
@@ -52,7 +52,7 @@ if (isIphone || isIpad) {
     });
     $('a[href*="instagram.com"]').on('click', function(e){
         e.preventDefault();
-        var iUser = $(this).attr("href").match(/instagram.com\/([a-zA-Z_.-]+)/)[1];
+        var iUser = $(this).attr("href").match(/instagram\.com\/([a-zA-Z_.-]+)/)[1];
         var now = new Date().valueOf();
         setTimeout(function () {
         if (new Date().valueOf() - now > 100) return;
@@ -61,7 +61,7 @@ if (isIphone || isIpad) {
         window.location.href = "intent://instagram.com/_u/" + iUser + "/#Intent;package=com.instagram.android;scheme=https;end"; // Opens IG link in Android native app
     });
     $('a[href*="twitter.com"]').on('click', function(e){
-        var tUser = $(this).attr("href").match(/twitter.com\/([a-zA-Z_.-]+)/)[1];
+        var tUser = $(this).attr("href").match(/twitter\.com\/([a-zA-Z_.-]+)/)[1];
         var now = new Date().valueOf();
         setTimeout(function () {
         if (new Date().valueOf() - now > 100) return;
